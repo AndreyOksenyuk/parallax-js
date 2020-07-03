@@ -14,3 +14,14 @@ window.addEventListener('scroll', function () {
    tree.style.transform =  `scale(${1 + x})`;
 
 });
+
+//progress bar
+let progres = document.querySelector('.progres__inner');
+
+window.addEventListener('scroll', function () {
+   var win = document.body.scrollTop || document.documentElement.scrollTop;
+   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+   var procent = (win / height) * 100;
+   progres.style.width = procent + '%'
+
+})

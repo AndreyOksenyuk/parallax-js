@@ -53,3 +53,26 @@ body{
    font-size: 80px;
    z-index: 11;
 }
+.background-fix{
+   width: 100%;
+   height: 500px;
+   background-image: url('../img/sky.jpg');
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.progres {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 5px;
+   background-color: rgba(255, 255, 255, 0);
+   z-index: 20;
+}
+
+.progres__inner {
+   width: 0%;
+   height: 100%;
+   background: linear-gradient(2deg, #08748f 0%, #055af7 100%);
+   border-radius: 50px;
+}
